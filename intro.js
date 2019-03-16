@@ -9,7 +9,7 @@ console.warn(employed);
 console.info('Name:')
 console.info(name)
 
-name = "Florentina V";
+name = "Florentina";
 
 console.info('Name:')
 console.info(name)
