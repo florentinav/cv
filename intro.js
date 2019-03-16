@@ -1,19 +1,3 @@
-console.info("my first js file")
-
-var name = "Vasilovschi";
-var employed = true;
-
-console.warn("employed");
-console.warn(employed);
-
-console.info('Name:')
-console.info(name)
-
-name = "Florentina";
-
-console.info('Name:')
-console.info(name)
-
 function getWelcomeMsg(){
     return "Welcome to my site!";
     
@@ -39,22 +23,7 @@ var color = getColor();
 summaryElement.style.color = color;
 
 
-// first example
-function hideHomePage () {
-    document.getElementById('home-page').style.display = 'none';
-}
-function showSkillsPage () {
-    document.getElementById ('skills-page').style.display = 'block';
-}
-function clickOnSkills () {
-    //hideHomePage ();
-    //showSkillsPage ();
-    hidePage('home-page');
-    hidePage('languages-page');
-    hidePage('aboutme-page');
-    showPage('skills-page');
-}
-// first example - end
+
 
 function hidePage(page) {
     document.getElementById(page).style.display = 'none';
