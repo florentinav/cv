@@ -1,6 +1,6 @@
 console.info("my first js file")
 
-var name = "Vasilovschi";
+var name = "Vasilovschi F";
 var employed = true;
 
 console.warn("employed");
