@@ -60,7 +60,5 @@ function showSkills() {
     function printSkill(skill, index) {
         console.info("#" + (index + 1) + " " + skill);
     }
-
-    skills.forEach(printSkill);
 }
 showSkills();
