@@ -23,8 +23,6 @@ var color = getColor();
 summaryElement.style.color = color;
 
 
-
-
 function hidePage(page) {
     document.getElementById(page).style.display = 'none';
 }
@@ -55,3 +53,12 @@ function hideAllPages(){
 }
 
 initMenu ();
+
+function showSkills(){
+    var skills = ['html', 'css', 'js'];
+    console.warn('showSkills', skills);
+    for(var i = 0; i < skills.length; i++)
+    console.info(i + 1 + ". " + skills[i]);
+}
+
+showSkills();
