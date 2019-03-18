@@ -55,7 +55,7 @@ function showSkills() {
     console.warn('showSkills', skills);
 
     var htmlSkills = skills.map(function(skill, index) {
-        return '<li>' + skill.toLocaleUpperCase() + '</li>' });
+        return '<li>' + skill.toUpperCase() + '</li>' });
 
     var ul = document.querySelector('#skills-page ul');
     ul.innerHTML = htmlSkills.join(['']);
