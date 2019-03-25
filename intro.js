@@ -53,7 +53,7 @@ function hideAllPages() {
 
 initMenu();
 
-//march 18
+//march 18 - 25
 
 function showSkills() {
     //var allEndorsements = [8, 12, 19, 3];
@@ -64,14 +64,14 @@ function showSkills() {
         {name: 'css', endorsements: 12, endorsedBy: "Vasile I"},
         {name: 'nodejs', endorsements: 3}
     ];
+
+    skills.sort(function(a, b){
+        //return b.name > a.name ? -1 : 0
+        return b.endorsements - a.endorsements;
+    });
    
     var htmlSkills = skills.map(function(skill) {
-        var endorsedBy = skill.endorsedBy;
-        if (endorsedBy){
-            endorsedBy = ' - ' + endorsedBy;
-        } else {
-            endorsedBy = '';
-        }
+        var endorsedBy = skill.endorsedBy ? ' - ' + skill.endorsedBy : '';
         var endorsements = ` <span class="endorsement">(${skill.endorsements}${endorsedBy})</span>`;
         return '<li>' + skill.name.toUpperCase() + endorsements + '</li>';
     });
