@@ -61,3 +61,7 @@ display: inline-block;
 #top-menu-bar a:hover {
     color: #334455; background: #cccccccc;
 }
+
+.endorsement {
+    color: gray;
+}
